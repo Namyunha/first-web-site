@@ -12,77 +12,115 @@
         </script>
         <title>반찬 - 두부조림</title>
         <meta charset="utf-8">
+        <style>
+            body{
+                margin: 0;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            h1{
+                text-align: center;
+                font-size: 45px;
+                color: black;
+                border-bottom: 1px solid gray;
+                padding: 20px;
+                margin: 0;
+            }
+            h2{
+                margin-top: 0;
+            }
+            #grid{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #grid ol{
+                border-right: 1px solid gray;
+                width: 150px;
+                margin: 0;
+                padding: 20px;
+            }
+            
+            #grid #article{
+                padding: 15px 0px 0px 50px;
+            }
+        </style>
     </head>
     <body>
-        <h1><ul><a href="index.html">반찬</a></ul></h1>
-        <ol>
-            <li><a href="1.html">두부조림</a></li>
-            <li><a href="2.html">감자조림</a></li>
-            <li><a href="3.html">꽈리고추멸치볶음</a></li>
-        </ol>
-        <h2><a href="https://wtable.co.kr/recipes/znhqLBnvtiJ3d7fpRzrUcmJH" target="_blank">두부조림</a></h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Eino3yP-Wk0?si=T8TYM140DhNEmLVe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <P>매일 먹는 반찬이지만 질리지 않고, 꾸준히 사랑 받는 메뉴들이 있죠. 자작자작~ 
-            양념이 배인 두부조림도 식탁 위에 자주 올리는 반찬이랍니다. 
-            오늘은 무슨 반찬을 만들까 고민일 때, 이 두부조림 레시피를 활용해보세요.</P>
-        <h4>기본재료</h4>
-        <ol>
-            <li>
-                <span>두부(부침용)</span>
-                <span>1+1/2모</span>
-            </li>
-            <li>
-                <span>대파</span>
-                <span>1/2대</span>
-            </li>
-            <li>
-                <span>양파</span>
-                <span>1개</span>
-            </li>
-            <li>
-                <span>청양고추</span>
-                <span>1개</span>
-            </li>
-            <li>
-                <span>다시마멸치 육수</span>
-                <span>1컵</span>
-            </li>
-            <li>
-                <span>깨</span>
-                <span>약간</span>
-            </li>
-        </ol>
-        <h4>양념재료</h4>
-        <ol>
-            <li>
-                <span>간장</span>
-                <span>3큰술</span>
-            </li>
-            <li>
-                <span>맛술</span>
-                <span>2큰술</span>
-            </li>
-            <li>
-                <span>고춧가루</span>
-                <span>1큰술</span>
-            </li>
-            <li>
-                <span>설탕</span>
-                <span>1큰술</span>
-            </li>
-            <li>
-                <span>다진마늘</span>
-                <span>1/2큰술</span>
-            </li>
-            <li>
-                <span>참기름</span>
-                <span>1큰술</span>
-            </li>
-            <li>
-                <span>후추</span>
-                <span>약간</span>
-            </li>
-        </ol>
+        <h1><a href="index.html">반찬</a></h1>
+        <div id="grid">
+            <ol>
+                <li><a href="1.html">두부조림</a></li>
+                <li><a href="2.html">감자조림</a></li>
+                <li><a href="3.html">꽈리고추멸치볶음</a></li>
+            </ol>
+            <div id="article">
+                <h2><a href="https://wtable.co.kr/recipes/znhqLBnvtiJ3d7fpRzrUcmJH" target="_blank">두부조림</a></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Eino3yP-Wk0?si=T8TYM140DhNEmLVe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <P>매일 먹는 반찬이지만 질리지 않고, 꾸준히 사랑 받는 메뉴들이 있죠. 자작자작~ 
+                    양념이 배인 두부조림도 식탁 위에 자주 올리는 반찬이랍니다. 
+                    오늘은 무슨 반찬을 만들까 고민일 때, 이 두부조림 레시피를 활용해보세요.</P>
+                <h4>기본재료</h4>
+                <ul>
+                    <li>
+                        <span>두부(부침용)</span>
+                        <span>1+1/2모</span>
+                    </li>
+                    <li>
+                        <span>대파</span>
+                        <span>1/2대</span>
+                    </li>
+                    <li>
+                        <span>양파</span>
+                        <span>1개</span>
+                    </li>
+                    <li>
+                        <span>청양고추</span>
+                        <span>1개</span>
+                    </li>
+                    <li>
+                        <span>다시마멸치 육수</span>
+                        <span>1컵</span>
+                    </li>
+                    <li>
+                        <span>깨</span>
+                        <span>약간</span>
+                    </li>
+                </ul>
+                <h4>양념재료</h4>
+                <ul>
+                    <li>
+                        <span>간장</span>
+                        <span>3큰술</span>
+                    </li>
+                    <li>
+                        <span>맛술</span>
+                        <span>2큰술</span>
+                    </li>
+                    <li>
+                        <span>고춧가루</span>
+                        <span>1큰술</span>
+                    </li>
+                    <li>
+                        <span>설탕</span>
+                        <span>1큰술</span>
+                    </li>
+                    <li>
+                        <span>다진마늘</span>
+                        <span>1/2큰술</span>
+                    </li>
+                    <li>
+                        <span>참기름</span>
+                        <span>1큰술</span>
+                    </li>
+                    <li>
+                        <span>후추</span>
+                        <span>약간</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <h3>레시피</h3>
         <h4>STEP1</h4>
         <p>두부는 먹기 좋게 썰어 약간의 소금, 후추를 뿌려 10분 정도 밑간을 해주세요.</p>
