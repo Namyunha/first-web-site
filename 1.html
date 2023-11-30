@@ -16,29 +16,41 @@
     </head>
     <body>
         <script>
-            function dayNightBtn(mine){
-                var target = document.querySelector('body');
-                let aList = document.querySelectorAll('a');
-                if(mine.value === 'night'){
-                    target.style.backgroundColor='black';
-                    target.style.color='white';
+                
+                
+            let Body = {
+                setColor : function setColor(color){
+                    document.querySelector('body').style.color=color;
+                },
+                setBackgroundColor : function setBackgroundColor(backgroundColor){
+                    document.querySelector('body').style.backgroundColor=backgroundColor;
+                }
+            }
+            let Link = {
+                setColor : function setColor(color){
+                    var aList = document.querySelectorAll('a');
                     for(let i = 0; i < aList.length; i++){
-                        aList[i].style.color='powderblue';
+                        aList[i].style.color=color;
                     }
+                },
+            }
+            function dayNightBtn(mine){
+                if(mine.value === 'night'){
+                    Body.setColor('white');
+                    Body.setBackgroundColor('black');
+                    Link.setColor('powderblue');
                     mine.value='day';
                 }else{
-                    target.style.backgroundColor='white';
-                    target.style.color='black';
-                    for(let i = 0; i <aList.length; i++){
-                        aList[i].style.color='blue';
-                    }
+                    Body.setColor('black');
+                    Body.setBackgroundColor('white');
+                    Link.setColor('blue');
                     mine.value='night';
                 }
             }
         </script>
         <p>
             <div style="text-align: right; padding-right: 20px;">
-                <input id="day-night" type="button" value="night"
+                <input id="day-night" type="button" value="night"x`
                 style="padding: 10px 20px; margin: 0px 10px; font-size: 20px;" type="button" value="night" 
                 onclick="dayNightBtn(this)">
             </div>
