@@ -15,7 +15,36 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1><a href="index.html">반찬</a></h1>
+        <script>
+            function dayNightBtn(mine){
+                var target = document.querySelector('body');
+                let aList = document.querySelectorAll('a');
+                if(mine.value === 'night'){
+                    target.style.backgroundColor='black';
+                    target.style.color='white';
+                    for(let i = 0; i < aList.length; i++){
+                        aList[i].style.color='powderblue';
+                    }
+                    mine.value='day';
+                }else{
+                    target.style.backgroundColor='white';
+                    target.style.color='black';
+                    for(let i = 0; i <aList.length; i++){
+                        aList[i].style.color='blue';
+                    }
+                    mine.value='night';
+                }
+            }
+        </script>
+        <p>
+            <div style="text-align: right; padding-right: 20px;">
+                <input id="day-night" type="button" value="night"
+                style="padding: 10px 20px; margin: 0px 10px; font-size: 20px;" type="button" value="night" 
+                onclick="dayNightBtn(this)">
+            </div>
+        </p>
+
+        <h1 style="padding-bottom: 50px;"><a href="index.html">반찬</a></h1>
         <div id="grid">
             <ol>
                 <li><a href="1.html">두부조림</a></li>
